@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Menu.uss?fileID=7433441132597879392&amp;guid=db9b411ae7ca70f449fe6bcca389e4f4&amp;type=3#Menu" />
+    <ui:VisualElement name="Menu" style="flex-grow: 1; background-color: rgb(163, 229, 245);">
+        <ui:Label tabindex="-1" text="Selecciona una obra" parse-escape-sequences="true" display-tooltip-when-elided="true" class="header" />
+        <ui:Button text="El David" parse-escape-sequences="true" display-tooltip-when-elided="true" name="David" class="button3" />
+        <ui:Button text="Mona Lisa" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MonaLisa" class="button3" />
+        <ui:Button text="Macchina Volante" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DaVinciMacchina" class="button3" />
+        <ui:Button text="Noche estrellada" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NocheEstrellada" class="button3" />
+        <ui:Button text="Árboles de olivo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OliveTrees" class="button3" />
+        <ui:Button text="Hombre de Vitruvio" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Vitruvio" class="button3" />
+    </ui:VisualElement>
+</ui:UXML>

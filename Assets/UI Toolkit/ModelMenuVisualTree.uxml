@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Menu.uss?fileID=7433441132597879392&amp;guid=db9b411ae7ca70f449fe6bcca389e4f4&amp;type=3#Menu" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: column-reverse; align-items: stretch; justify-content: flex-end; align-self: stretch;">
+        <ui:VisualElement name="BottomMenu" style="flex-grow: 1; flex-direction: row; align-self: auto; justify-content: space-between; align-items: flex-end; flex-shrink: 1;">
+            <ui:Button text="Menú" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuButton" class="button" />
+            <ui:Button text="Info" parse-escape-sequences="true" display-tooltip-when-elided="true" name="InfoButton" class="button" style="white-space: nowrap;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Tranformation" style="flex-grow: 1; flex-direction: column; align-self: auto; justify-content: center; align-items: stretch; flex-shrink: 1; margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-right: 0; padding-left: 0; padding-top: 0; padding-bottom: 0; height: 360px; width: 200px;">
+            <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ZoomIn" class="button2" style="margin-bottom: 10px; margin-top: 10px; margin-right: 30px; margin-left: 30px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;" />
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ZoomOut" class="button2" style="white-space: nowrap; padding-top: 20px; margin-top: 10px; margin-right: 30px; margin-bottom: 10px; margin-left: 30px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 15px; border-right-width: 15px; border-bottom-width: 15px; border-left-width: 15px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
