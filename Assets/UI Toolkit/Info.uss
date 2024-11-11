@@ -1,0 +1,21 @@
+.header {
+    font-size: 90px;
+    -unity-text-align: upper-center;
+    -unity-font: url("project://database/Assets/TextMesh%20Pro/Fonts/static/SourGummy-Black.ttf?fileID=12800000&guid=8a3a1f9c3fa945b44bb70c5bf4182b1d&type=3#SourGummy-Black");
+    -unity-font-definition: initial;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    white-space: normal;
+}
+
+.body {
+    -unity-font: url("project://database/Assets/TextMesh%20Pro/Fonts/static/SourGummy-Regular.ttf?fileID=12800000&guid=cb2d145ce809e9c42a94ca4e0624ad38&type=3#SourGummy-Regular");
+    -unity-font-definition: initial;
+    font-size: 60px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    margin-right: 80px;
+    margin-left: 80px;
+    flex-wrap: wrap;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}

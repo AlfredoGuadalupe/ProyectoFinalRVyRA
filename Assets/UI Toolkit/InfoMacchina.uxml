@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Info.uss?fileID=7433441132597879392&amp;guid=f66f4e1ac6a05b84ab2521a44c0889e6&amp;type=3#Info" />
+    <ui:VisualElement style="flex-grow: 1; -unity-background-image-tint-color: rgb(0, 0, 0); background-color: rgba(212, 212, 212, 0.89);">
+        <ui:VisualElement name="UpperMenu" style="flex-grow: 0; flex-direction: column-reverse; justify-content: center; height: 400px; margin-right: 80px; margin-bottom: 0; margin-left: 80px;">
+            <ui:Label tabindex="-1" text="Macchina Volante" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Tittle" class="header" style="white-space: normal; margin-top: 4px; margin-bottom: 2px;" />
+            <ui:Button text="X" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Close" style="-unity-text-align: middle-center; width: 100px; height: 100px; margin-top: 50px; margin-right: 50px; margin-bottom: 50px; margin-left: 50px; left: 800px; font-size: 50px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; -unity-font-style: bold; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/static/SourGummy-Black.ttf?fileID=12800000&amp;guid=8a3a1f9c3fa945b44bb70c5bf4182b1d&amp;type=3#SourGummy-Black&quot;);" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Texto referente a la obra, autor, blblavla" parse-escape-sequences="true" display-tooltip-when-elided="true" name="InfoCard" class="body" />
+    </ui:VisualElement>
+</ui:UXML>
