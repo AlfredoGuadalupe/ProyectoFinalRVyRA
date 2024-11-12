@@ -18,4 +18,6 @@
     flex-wrap: wrap;
     white-space: normal;
     -unity-text-align: upper-left;
+    margin-bottom: 80px;
+    margin-top: 40px;
 }

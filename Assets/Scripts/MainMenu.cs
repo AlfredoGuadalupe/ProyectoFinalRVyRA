@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour
     public float _zoomfactor = 1f, _maxzoom = 5f;
     private float _minzoom = 1f;
     private Button _david,_monalisa,_macchina,_noche,_olive,_vitruvio,_info, _menu, _zoomin, _zoomout;
+    private List<Button> _buttons;
+    private int _currentModel;
 
     private void Start(){
         _zoomout = _modelmenu.rootVisualElement.Q<Button>("ZoomOut");
@@ -30,6 +32,7 @@ public class MainMenu : MonoBehaviour
         _noche = _document.rootVisualElement.Q<Button>("NocheEstrellada");
         _olive = _document.rootVisualElement.Q<Button>("OliveTrees");
         _vitruvio = _document.rootVisualElement.Q<Button>("Vitruvio");
+        _buttons = _document.rootVisualElement.Query<Button>().ToList();
         _david.RegisterCallback<ClickEvent>(OnClickDavid);
         _monalisa.RegisterCallback<ClickEvent>(OnClickMona);
         _macchina.RegisterCallback<ClickEvent>(OnClickMacchina);
@@ -64,7 +67,13 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Button Clicked: " + button.name);
         }
-        
+        _document.rootVisualElement.style.display = DisplayStyle.None;
+        _currentModel = _buttons.IndexOf(_david);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
+        _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnClickMona(ClickEvent evt){
@@ -74,9 +83,11 @@ public class MainMenu : MonoBehaviour
             Debug.Log("Button Clicked: " + button.name);
         }
         _document.rootVisualElement.style.display = DisplayStyle.None;
-        _modelos[0].SetActive(true);
-        _model = _modelos[0];
-        _infomenu = _infos[0];
+        _currentModel = _buttons.IndexOf(_monalisa);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
         _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
@@ -86,6 +97,13 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Button Clicked: " + button.name);
         }
+        _document.rootVisualElement.style.display = DisplayStyle.None;
+        _currentModel = _buttons.IndexOf(_macchina);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
+        _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnClickNoche(ClickEvent evt){
@@ -94,6 +112,13 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Button Clicked: " + button.name);
         }
+        _document.rootVisualElement.style.display = DisplayStyle.None;
+        _currentModel = _buttons.IndexOf(_noche);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
+        _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnClickOlive(ClickEvent evt){
@@ -102,6 +127,13 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Button Clicked: " + button.name);
         }
+        _document.rootVisualElement.style.display = DisplayStyle.None;
+        _currentModel = _buttons.IndexOf(_olive);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
+        _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnClickVitruvio(ClickEvent evt){
@@ -110,6 +142,13 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Button Clicked: " + button.name);
         }
+        _document.rootVisualElement.style.display = DisplayStyle.None;
+        _currentModel = _buttons.IndexOf(_vitruvio);
+        Debug.Log("Index of button: " + _currentModel);
+        _modelos[_currentModel].SetActive(true);
+        _model = _modelos[_currentModel];
+        _infomenu = _infos[_currentModel];
+        _modelmenu.rootVisualElement.style.display = DisplayStyle.Flex;
     }
 
     private void OnClickMenu(ClickEvent evt){
