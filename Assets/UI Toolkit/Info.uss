@@ -21,3 +21,7 @@
     margin-bottom: 80px;
     margin-top: 40px;
 }
+
+.button {
+    top: 100px;
+}
