@@ -179,10 +179,6 @@ public class MainMenu : MonoBehaviour
         }
         if(_model.transform.localScale.x < _maxzoom){
             _model.transform.localScale = new Vector3(_model.transform.localScale.x + _zoomfactor, _model.transform.localScale.y + _zoomfactor, _model.transform.localScale.z + _zoomfactor);
-            if(_model.transform.localScale.x == _maxzoom)
-                _zoomin.SetEnabled(false);
-            else if(_model.transform.localScale.x > _minzoom)
-                _zoomout.SetEnabled(true);
         }
     }
 
@@ -194,10 +190,30 @@ public class MainMenu : MonoBehaviour
         }
         if(_model.transform.localScale.x > _minzoom){
             _model.transform.localScale = new Vector3(_model.transform.localScale.x - _zoomfactor, _model.transform.localScale.y - _zoomfactor, _model.transform.localScale.z - _zoomfactor);
-            if(_model.transform.localScale.x == _minzoom)
-                _zoomout.SetEnabled(false);
-            else if(_model.transform.localScale.x < _maxzoom)
+        }
+    }
+
+    void Update(){
+        if(_model != null && _model.transform.localScale.x == _maxzoom)
+        {
+            _zoomin.SetEnabled(false);
+            if(_zoomout.enabledSelf == false)
+            {
+                _zoomout.SetEnabled(true);
+            }
+        }
+        else if(_model != null && _model.transform.localScale.x < _maxzoom && _model.transform.localScale.x > _minzoom)
+        {
+            _zoomin.SetEnabled(true);
+            _zoomout.SetEnabled(true);
+        }
+        else if(_model != null && _model.transform.localScale.x == _minzoom)
+        {
+            _zoomout.SetEnabled(false);
+            if(_zoomin.enabledSelf == false)
+            {
                 _zoomin.SetEnabled(true);
+            }
         }
     }
 }
